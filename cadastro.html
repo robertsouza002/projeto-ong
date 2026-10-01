@@ -19,7 +19,12 @@
 
     <nav>
 
-        <button class="menu-toggle">☰</button>
+        <button
+    class="menu-toggle"
+    aria-label="Abrir menu de navegação"
+    aria-expanded="false">
+    ☰
+</button>
 
         <div class="menu">
 
@@ -43,7 +48,7 @@
 
     <main class="grid-container">
 
-        <form>
+        <form aria-label="Formulário de cadastro de voluntário">
 
             <fieldset>
                 <legend>Dados pessoais</legend>
@@ -168,6 +173,11 @@
     </footer>
 
     <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 
