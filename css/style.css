@@ -367,3 +367,48 @@ fieldset {
 .menu-aberto {
     display: flex !important;
 }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--cor-destaque);
+    outline-offset: 2px;
+}
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --cor-primaria: #90CAF9;
+        --cor-secundaria: #64B5F6;
+        --cor-destaque: #F2B134;
+        --cor-fundo: #121212;
+        --cor-texto: #FFFFFF;
+        --cor-texto-secundario: #DDDDDD;
+        --cor-branca: #1E1E1E;
+        --cor-borda: #555555;
+    }
+
+    body {
+        background-color: var(--cor-fundo);
+        color: var(--cor-texto);
+    }
+
+    section,
+    fieldset,
+    .dropdown-content {
+        background-color: var(--cor-branca);
+        color: var(--cor-texto);
+    }
+
+    input,
+    select {
+        background-color: #1E1E1E;
+        color: #FFFFFF;
+        border-color: var(--cor-borda);
+    }
+
+    .alerta {
+        background-color: #332A16;
+        color: #FFFFFF;
+    }
+}
