@@ -120,7 +120,6 @@ if (areaProjetos) {
 
 }
 
-const campos = document.querySelectorAll("input, select");
 
 campos.forEach(function(campo) {
 
